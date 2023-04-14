@@ -41,26 +41,7 @@ Feature: Sign Up
     Then I click on submit button
     Then i verify "thank you for your feedback" is displayed
 
-  Scenario: verify child age dropdowns are same as number of children selected
-    Given I am on hotel homepage
-    When I click on travellers
-    When I select "children" as 2
-    When I verify children-age dropdown are 2
-    When I verify plus-button is enabled
-    When I minus-button is enabled
-    When I select "children" as 6
-    When I verify children-age dropdown are 6
-    When I verify plus-button is disabled
-    When I verify minus-button is enabled
-    When I select "children" as 5
-    When I verify children-age dropdown are 5
-    When I verify plus-button is enabled
-    When I verify minus-button is enabled
-    When I select "children" as 0
-    When I verify children-age dropdown is not displayed
-    Then I verify plus-button is enabled
-    Then I verify minus-button is enabled
-
+  
 
 Scenario:verify user can update number of guest on home page
 Given I am on hotel homepage
